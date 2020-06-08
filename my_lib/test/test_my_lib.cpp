@@ -6,7 +6,7 @@ using namespace ::testing;
 
 TEST(my_lib, return_one)
 {
-    ASSERT_EQ(return_one(), 1);
+    ASSERT_EQ(return_one(), 0);
 }
 
 int main(int argc, char** argv)
