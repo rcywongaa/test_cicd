@@ -7,16 +7,16 @@ jobs:
     steps:
       - checkout
       - run:
-        name: setup
-        command: ./setup.bash
+          name: setup
+          command: ./setup.bash
 
       - run:
-        name: build
-        command: source /opt/ros/melodic/setup.bash && catkin build
+          name: build
+          command: source /opt/ros/melodic/setup.bash && catkin build
 
       - run:
-        name: test
-        command: source /opt/ros/melodic/setup.bash && catkin run_tests && catkin_test_results
+          name: test
+          command: source /opt/ros/melodic/setup.bash && catkin run_tests && catkin_test_results
 
 workflows:
   main:
