@@ -5,6 +5,7 @@ jobs:
     docker:
       - image: osrs/ros:melodic
     steps:
+      - checkout
       - run:
         name: setup
         command: ./setup.bash
