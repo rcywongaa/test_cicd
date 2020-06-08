@@ -21,7 +21,7 @@ jobs:
       run: ./setup.bash
 
     - name: build
-      run: catkin build
+      run: source /opt/ros/melodic/setup.bash && catkin build
 
     - name: test
-      run: catkin run_tests
+      run: source /opt/ros/melodic/setup.bash && catkin run_tests
