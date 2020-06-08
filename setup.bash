@@ -9,3 +9,6 @@ sudo apt update
 
 sudo apt install -y \
     python-catkin-tools
+
+DIR=$(dirname "$(readlink -f "$0")")
+catkin config -s "${DIR}"
