@@ -12,3 +12,5 @@ sudo apt install -y \
 
 DIR=$(dirname "$(readlink -f "$0")")
 catkin config -s "${DIR}"
+
+source /opt/ros/melodic/setup.bash
