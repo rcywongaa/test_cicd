@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-sudo apt install \
+sudo apt update
+
+sudo apt install -y \
     wget \
     clang-tidy \
     cppcheck \
