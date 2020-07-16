@@ -28,6 +28,6 @@ jobs:
       run: source /opt/ros/melodic/setup.bash && catkin build
 
     - name: test
-      run: source /opt/ros/melodic/setup.bash && catkin run_tests && catkin_test_results
+      run: source /opt/ros/melodic/setup.bash && catkin run_tests && catkin test
       # Because catkin run_tests returns 0 even if test fails
       # https://github.com/catkin/catkin_tools/issues/245
