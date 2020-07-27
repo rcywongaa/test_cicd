@@ -6,5 +6,5 @@ int return_one()
     //std::unique_ptr<int> a = std::make_unique<int>(3);
     //std::unique_ptr<int> b = std::move(a);
     //*a;
-    return 0;
+    return 1;
 }
