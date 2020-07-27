@@ -3,9 +3,9 @@
 # To create a new Doxyfile containing all available options, call `doxygen -g`
 
 # Get Project name and version from CMake
-PROJECT_NAME = @DOXYGEN_PROJECT_NAME@
+PROJECT_NAME = @PROJECT_NAME@
 
-INPUT = @DOXYGEN_PROJECT_ROOT@
+INPUT = @CMAKE_CURRENT_SOURCE_DIR@/src/ @CMAKE_CURRENT_SOURCE_DIR@/include/
 EXTRACT_ALL = YES
 RECURSIVE = YES
 
@@ -15,3 +15,5 @@ HTML_DYNAMIC_SECTIONS = YES
 GENERATE_TREEVIEW = YES
 
 GENERATE_LATEX = NO
+
+JAVADOC_AUTOBRIEF = YES
